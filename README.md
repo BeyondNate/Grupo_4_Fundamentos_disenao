@@ -8,4 +8,4 @@ Este proyecto sera gestionado por las siguientes personas con sus roles especifi
 3.  Gabiela Santamaria *Investigacion*
 
 Imagenes de las ods
-![Foto de la ODS](https://images.placetoplug.com/post-image-images/d50d1820-effd-416f-ac86-37493feffb1f/original.jpg)
+![Foto de la ODS](https://search-drive.com/wp-content/uploads/2021/12/ODS-ci%CC%81rculo-1024x727-1.png)  
