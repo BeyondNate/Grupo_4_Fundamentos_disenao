@@ -4,6 +4,9 @@
   -**Brad** Cárdenas Parián
   -*Bue Rodrigo* Asamat
   -*Gabriela* Santamaria
+1.Integrantes
+2.Del Grupo
+3.De Fundamentos
 
 
 Grupo $
