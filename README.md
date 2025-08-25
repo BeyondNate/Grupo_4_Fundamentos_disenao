@@ -21,7 +21,7 @@ Nos interesa trabajar en los siguientes **Objetivos de Desarrollo Sostenible (OD
 
 ## 📸 Fotografía del Equipo  
 <p align="center">
-  <img src="/Recursos/Imágenes/equipo.png" alt="Foto grupal del equipo" width="500"/><br>
+  <img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/grupo%20.jpg" alt="Foto grupal del equipo" width="500"/><br>
   <em>Figura 1. Fotografía del equipo 04</em>
 </p>
 
