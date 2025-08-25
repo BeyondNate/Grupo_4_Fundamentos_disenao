@@ -39,4 +39,5 @@ Nos interesa trabajar en los siguientes **Objetivos de Desarrollo Sostenible (OD
 ---
 
 ## 📌 Resumen Final  
-Este README resume quiénes somos, qué nos motiva y en qué ODS queremos enfocar nuestro trabajo durante el curso.  
+Este README resume quiénes somos, qué nos motiva y en qué ODS queremos enfocar nuestro trabajo durante el curso.    
+
