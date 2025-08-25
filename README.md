@@ -31,7 +31,7 @@ Nos interesa trabajar en los siguientes **Objetivos de Desarrollo Sostenible (OD
 
 | Foto | Nombre | Rol | Intereses |
 |------|--------|-----|-----------|
-| <img src="/Recursos/Imágenes/integrante1.png" width="90"/> | **Brad Cardenas Parian** | Líder del equipo | Innovación social, sostenibilidad |
+| <img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/hombre.png" width="90"/> | **Brad Cardenas Parian** | Líder del equipo | Innovación social, sostenibilidad |
 | <img src="/Recursos/Imágenes/integrante2.png" width="90"/> | **María Antezana De la Cruz** | Responsable de investigación | Gestión ambiental, desarrollo comunitario |
 | <img src="/Recursos/Imágenes/integrante1.png" width="90"/> | **Melissa Bustos Montañez** | Diseñador/a | Diseño de prototipos, creatividad aplicada |
 | <img src="/Recursos/Imágenes/integrante2.png" width="90"/> | **Gabriela Santamaría Huaytan** | Encargado/a de documentación | Comunicación científica, redacción técnica |
