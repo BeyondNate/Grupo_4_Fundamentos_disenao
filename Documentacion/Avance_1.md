@@ -44,3 +44,9 @@ Este proyecto contribuye al **Objetivo de Desarrollo Sostenible 7: Energía Aseq
 
 ## 👥 Contribuciones
 Ayudenos Profesor, es demasiado ambicioso
+
+
+---
+## 🖼️ Sketch del Proyecto FVH-001
+
+![Sketch FVH-001](https://github.com/tu-usuario/tu-repositorio/blob/main/assets/sketch-fvh001.jpg?raw=true)
