@@ -1,13 +1,13 @@
 # Grupo 4
 ## Proyecto Por Definir
-Este proyecto tiene como objetivo resolver una ODS.
-### Roles del Equipo
-Este proyecto sera gestionado por las siguientes personas con sus roles especificos:
-1.  Brad Cardenas *Coordinador, líder y sketcher*
-2.  Rodrigo Asmat *Arquitecto de prototipos*
-3.  Gabiela Santamaria *Tester*
-4.  Melissa Bustos **
-5.  Maria Antezana **
+Este proyecto tiene como objetivo resolver la ODS 
+### NUESTRO EQUIPO 
+Este proyecto sera gestionado por las siguientes personas con sus roles especificos
+1.  Brad Cardenas *Coordinador general *
+2.  Rodrigo Asmat *Encargado de desarrollo tecnológicos y prototipado *
+3.  Gabriela Santamaria *Coordinadora de diseño y modelado 3D*
+4.  Melissa Bustos * Coordinadora de investigación y Redacción* 
+5.  Maria Antezana *Coordinadora de Software) 
 
 Imagenes de las ODS
 
