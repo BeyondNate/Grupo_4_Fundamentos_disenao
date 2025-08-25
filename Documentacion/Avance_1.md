@@ -49,4 +49,4 @@ Ayudenos Profesor, es demasiado ambicioso
 ---
 ## 🖼️ Sketch del Proyecto FVH-001
 
-![Sketch FVH-001](https://github.com/tu-usuario/tu-repositorio/blob/main/assets/sketch-fvh001.jpg?raw=true)
+![Sketch FVH-001](https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Documentacion/assets/fvh_001_sketch.jpeg?raw=true)
