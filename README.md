@@ -3,7 +3,7 @@
 Este proyecto tiene como objetivo resolver una ODS.
 ### Roles del Equipo
 Este proyecto sera gestionado por las siguientes personas con sus roles especificos:
-1.  Brad Cardenas *Coordinador ,lider y sketcher*
+1.  Brad Cardenas *Coordinador, líder y sketcher*
 2.  Rodrigo Asmat *Arquitecto de prototipos*
 3.  Gabiela Santamaria *Tester*
 4.  Melissa Bustos **
