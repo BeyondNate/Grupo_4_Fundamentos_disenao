@@ -12,7 +12,6 @@ Nuestro objetivo es aplicar la metodología de diseño para generar soluciones i
 Nos interesa trabajar en los siguientes **Objetivos de Desarrollo Sostenible (ODS):** 
  
 - ODS 7: Energía Asequible y No Contaminante 
-- ODS 9: Industria, Innovación e Infraestructura  
 - ODS 11: Ciudades y Comunidades Sostenibles
 - ODS 12: Producción y Consumo Responsables 
 - ODS 13: Acción por el Clima  
