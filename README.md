@@ -164,4 +164,4 @@ El Arduino ejecutará este flujo de forma continua:
 4.  **Análisis de Viabilidad:** Costos vs. ahorro energético para minería.
 
 ---
-<img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/BAIE_001.jpeg" width="90"/>
+<img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/BAIE_001.jpeg" width="1000"/>
