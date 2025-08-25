@@ -67,6 +67,6 @@ Este prototipo demuestra que es posible integrar tecnología low-cost (Arduino) 
 
 ---
 ## Sketch
-
+![Sketch FVH-001](https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Documentacion/assets/BAIE_001.jpeg?raw=true)
 
 
