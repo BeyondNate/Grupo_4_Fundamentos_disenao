@@ -1,4 +1,4 @@
-# Grupo 4
+# Grupo 4 - Fundamentos de Diseño 2025- 02 
 ## Proyecto Por Definir
 Este proyecto tiene como objetivo resolver la ODS 
 ### NUESTRO EQUIPO 
