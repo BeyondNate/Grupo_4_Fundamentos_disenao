@@ -41,21 +41,23 @@ Nos interesa trabajar en los siguientes **Objetivos de Desarrollo Sostenible (OD
 
 ## 📌 Resumen Final  
 ### ODS 11 Ciudades inteligentes
-### Objetivo General
-Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles.
+### **Objetivo General**
+Garantizar el acceso a una energía **asequible, segura, sostenible y moderna** para todas las personas.
 
-### ¿Por qué es importante?
-Más de la mitad de la población mundial vive en ciudades, y esta cifra sigue creciendo. Las áreas urbanas son centros de crecimiento económico, pero también concentran grandes problemas como la contaminación, la pobreza y la desigualdad.
+### **¿Por qué es importante?**
+La energía es fundamental para el desarrollo humano y económico: para la salud, la educación, el empleo y la seguridad. Sin embargo, millones de personas aún carecen de acceso a electricidad y dependen de fuentes de energía contaminantes (como leña o queroseno) para cocinar, lo que genera problemas de salud y ambientaless.
 
-### Metas Clave (Resumidas)
-El ODS 11 busca:
+---
 
-1. Vivienda adecuada: Garantizar el acceso de todas las personas a una vivienda y servicios básicos adecuados, seguros y asequibles.
-2. Transporte sostenible: Proporcionar sistemas de transporte seguros, accesibles y sostenibles para todos.
-3. Urbanización inclusiva y sostenible: Mejorar la planificación urbana participativa e integrada.
-4. Protección del patrimonio: Redoblar los esfuerzos para proteger y salvaguardar el patrimonio cultural y natural del mundo.
-5. Reducción de desastres: Reducir significativamente las muertes y pérdidas económicas causadas por desastres naturales.
-6. Reducción del impacto ambiental: Disminuir el impacto ambiental negativo de las ciudades, prestando especial atención a la calidad del aire y la gestión de residuos.
-7. Espacios públicos verdes: Proporcionar acceso universal a zonas verdes y espacios públicos seguros, inclusivos y accesibles.
+### **Metas Clave (Resumidas)**
 
+El ODS 7 busca:
+
+1.  **Acceso Universal:** Garantizar el acceso universal a servicios energéticos asequibles, confiables y modernos para **2030**.
+2.  **Energía Renovable:** Aumentar sustancialmente el porcentaje de **energía renovable** (solar, eólica, hidroeléctrica, etc.) en el mix energético global.
+3.  **Eficiencia Energética:** Duplicar la tasa mundial de mejora de la **eficiencia energética** (usar menos energía para hacer lo mismo).
+4.  **Cooperación Internacional:** Promover la investigación y la inversión en infraestructura y tecnología de energía limpia.
+5.  **Tecnología y Servicios:** Ampliar la infraestructura y mejorar la tecnología para prestar servicios energéticos modernos y sostenibles para todos en los países en desarrollo.
+
+---
 
