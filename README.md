@@ -31,7 +31,6 @@ Se enfoca en tres metas clave:
 
 ---
 ## Ideas
-¡Perfecto! Entiendo. Son dos propuestas diferentes y aún están en la fase de selección. Aquí tienes un resumen conciso y neutral de ambas que destaca su relación con el ODS 7, perfecto para presentarlas como opciones:
 
 ### **Resumen de Propuestas para ODS 7: Energía Asequible y No Contaminante**
 
