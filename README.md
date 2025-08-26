@@ -33,9 +33,9 @@ Nos interesa trabajar en los siguientes **Objetivos de Desarrollo Sostenible (OD
 |------|--------|-----|-----------|
 | <img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/Brad.jpeg" width="90"/> | **Brad Cardenas Parian** | Líder del equipo | Innovación social, sostenibilidad |
 | <img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/Mar%C3%ADa.jpg" width="90"/> | **María Antezana De la Cruz** | Responsable de investigación | Gestión ambiental, desarrollo comunitario |
-| <img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/melisa.jpg" width="90"/> | **Melissa Bustos Montañez** | Diseñador/a | Diseño de prototipos, creatividad aplicada |
-| <img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/gabriela.jpg" width="90"/> | **Gabriela Santamaría Huaytan** | Encargado/a de documentación | Comunicación científica, redacción técnica |
-| <img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/asmat.jpg" width="90"/> | **Rodrigo Asmat Mendoza** | Programador/a - Modelador/a | Programación, análisis de datos, simulación |
+| <img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/melisa.jpg" width="90"/> | **Melissa Bustos Montañez** | Diseñadora | Diseño de prototipos, creatividad aplicada |
+| <img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/gabriela.jpg" width="90"/> | **Gabriela Santamaría Huaytan** | Encargada de documentación | Comunicación científica, redacción técnica |
+| <img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/asmat.jpg" width="90"/> | **Rodrigo Asmat Mendoza** | Programador - Modelador | Programación, análisis de datos, simulación |
 
 ---
 
@@ -49,7 +49,7 @@ La energía es fundamental para el desarrollo humano y económico: para la salud
 
 ---
 
-### **Metas Clave (Resumidas)**
+### **Metas Clave**
 
 El ODS 7 busca:
 
