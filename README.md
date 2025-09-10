@@ -40,10 +40,10 @@ Como equipo, nos interesa trabajar en los siguientes **Objetivos de Desarrollo S
 
 ---
 
-##  PROYECTO: ECOFRÍO - Refrigerador Inteligente Antidesperdicio
+##  PROYECTO: SmartFresh - Refrigerador Inteligente Antidesperdicio
 
 ### Descripción General
-**ECOFRIO** es un refrigerador inteligente diseñado para prolongar la vida útil de los alimentos y reducir el desperdicio, integrando tecnología IoT, sensores avanzados, visión artificial y diseño sostenible. No solo conserva alimentos, sino que gestiona inteligentemente su ciclo de vida.
+**SmartFresh** es un refrigerador inteligente diseñado para prolongar la vida útil de los alimentos y reducir el desperdicio, integrando tecnología IoT, sensores avanzados, visión artificial y diseño sostenible. No solo conserva alimentos, sino que gestiona inteligentemente su ciclo de vida.
 
 ###  Objetivo General
 Diseñar y desarrollar un prototipo de refrigerador doméstico que reduzca en un 50% el desperdicio de alimentos en hogares peruanos mediante tecnología de monitoreo inteligente y gestión proactiva.
@@ -80,7 +80,7 @@ Diseñar y desarrollar un prototipo de refrigerador doméstico que reduzca en un
 ### 🎯 Meta 12.3: Reducción del Desperdicio de Alimentos
 **"De aquí a 2030, reducir a la mitad el desperdicio de alimentos per cápita mundial"**
 
-| Indicador | Impacto de ECOFRÍO |
+| Indicador | Impacto de SmartFresh |
 |:---|:---|
 | **Reducción de desperdicio** | Monitoreo inteligente que previene el olvido y descomposición de alimentos |
 | **Optimización del consumo** | Alertas proactivas sobre fechas de vencimiento y estado de frescura |
@@ -89,7 +89,7 @@ Diseñar y desarrollar un prototipo de refrigerador doméstico que reduzca en un
 ### ♻️ Meta 12.5: Reducción de Generación de Desechos
 **"Reducir considerablemente la generación de desechos mediante actividades de prevención, reducción, reciclado y reutilización"**
 
-| Indicador | Impacto de ECOFRÍO |
+| Indicador | Impacto de SmartFresh |
 |:---|:---|
 | **Prevención** | Elimina el desperdicio en origen al conservar mejor los alimentos |
 | **Reducción** | Disminuye la cantidad de residuos orgánicos en hogares |
@@ -98,7 +98,7 @@ Diseñar y desarrollar un prototipo de refrigerador doméstico que reduzca en un
 ### 📚 Meta 12.8: Información para Estilos de Vida Sostenibles
 **"Asegurar que las personas tengan información y conocimientos sobre desarrollo sostenible"**
 
-| Indicador | Impacto de ECOFRÍO |
+| Indicador | Impacto de SmartFresh |
 |:---|:---|
 | **Educación alimentaria** | Proporciona datos sobre conservación y aprovechamiento de alimentos |
 | **Concienciación** | Reportes semanales sobre ahorro económico y ambiental |
