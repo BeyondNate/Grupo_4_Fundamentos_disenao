@@ -64,7 +64,6 @@ Diseñar y desarrollar un prototipo de dispositivo modular adaptable que reduzca
 |:---|:---|:---|:---|
 | **Cámara OV5647** | Visión artificial | Identifica alimentos mediante reconocimiento de imagen y detecta cambios de color/textura | Reconocimiento automático sin necesidad de escanear códigos |
 | **Sensor DHT22** | Temperatura y humedad | Monitorea condiciones ambientales en diferentes zonas del refrigerador | Alerta si la temperatura sube, previniendo descomposición |
-| **Sensor HX711** | Báscula/peso | Mide el peso de alimentos en bandejas inteligentes | Detecta consumo y calcula cantidad restante |
 | **Sensor RFID-RC522** | Identificación | Lee etiquetas RFID en productos envasados | Registra automáticamente fecha de vencimiento |
 | **Sensor QR/Code** | Escáner | Lee códigos QR de productos comerciales | Identifica productos y sus fechas de caducidad |
 | **Sensor de puerta** | Magnético | Detecta cuando la puerta del refrigerador queda abierta | Ahorra energía y previene aumento de temperatura |
