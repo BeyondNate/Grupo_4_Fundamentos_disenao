@@ -46,7 +46,7 @@ Como equipo, nos interesa trabajar en los siguientes **Objetivos de Desarrollo S
 **SmartFresh** es un módulo inteligente y portátil que se instala en el interior de refrigeradores convencionales para transformarlos en sistemas inteligentes. Diseñado para prolongar la vida útil de los alimentos y reducir el desperdicio, integra tecnología IoT, sensores avanzados, visión artificial y está fabricado con materiales sostenibles.
 
 ### Objetivo General
-Diseñar y desarrollar un prototipo de dispositivo modular adaptable que reduzca en un 50% el desperdicio de alimentos en hogares peruanos mediante tecnología de monitoreo inteligente y gestión proactiva.
+Diseñar y desarrollar un prototipo de dispositivo modular adaptable que reduzca en un 50% el desperdicio de alimentos en hogares peruanos mediante tecnología de monitoreo inteligente y gestión proactiva. 
 
 ### 🔍 ¿Cómo Funciona?
 
@@ -74,6 +74,7 @@ Diseñar y desarrollar un prototipo de dispositivo modular adaptable que reduzca
 *   **Compatibilidad universal:** Funciona con cualquier modelo de refrigerador.
 
 ---
+
 ## 📊 IMPACTO EN EL ODS 12: PRODUCCIÓN Y CONSUMO RESPONSABLES
 
 ### 🎯 Meta 12.3: Reducción del Desperdicio de Alimentos
