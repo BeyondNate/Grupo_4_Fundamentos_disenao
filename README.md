@@ -7,9 +7,10 @@
 
 ## 🌍 Descripción del Equipo  
 Somos el **Equipo 04** del curso **Fundamentos de Diseño 2025-2**, conformado por estudiantes de la carrera de Ingeniería Informática e Industrial.  
-Nuestro objetivo es aplicar la metodología de diseño para generar soluciones innovadoras con impacto social, tecnológico y ambiental.  
 
-Nos interesa trabajar en los siguientes **Objetivos de Desarrollo Sostenible (ODS):** 
+Nuestro objetivo es aplicar metodologías de diseño centradas en generar soluciones innovadoras que impacten de manera positiva en la sociedad, el ambiente y la tecnología.  
+
+Como equipo, nos interesa trabajar en los siguientes **Objetivos de Desarrollo Sostenible (ODS):**
  
 - ODS 7: Energía Asequible y No Contaminante 
 - ODS 9: Industria, Innovación e Infraestructura  
@@ -42,7 +43,7 @@ Nos interesa trabajar en los siguientes **Objetivos de Desarrollo Sostenible (OD
 ##  PROYECTO: ECOFRÍO - Refrigerador Inteligente Antidesperdicio
 
 ### Descripción General
-**ECOFRIO** es un refrigerador inteligente diseñado para prolongar la vida útil de los alimentos y reducir radicalmente el desperdicio, integrando tecnología IoT, sensores avanzados, visión artificial y diseño sostenible. No solo conserva alimentos, sino que gestiona inteligentemente su ciclo de vida.
+**ECOFRIO** es un refrigerador inteligente diseñado para prolongar la vida útil de los alimentos y reducir el desperdicio, integrando tecnología IoT, sensores avanzados, visión artificial y diseño sostenible. No solo conserva alimentos, sino que gestiona inteligentemente su ciclo de vida.
 
 ###  Objetivo General
 Diseñar y desarrollar un prototipo de refrigerador doméstico que reduzca en un 50% el desperdicio de alimentos en hogares peruanos mediante tecnología de monitoreo inteligente y gestión proactiva.
@@ -54,7 +55,7 @@ Diseñar y desarrollar un prototipo de refrigerador doméstico que reduzca en un
 2.  **Sensores Inteligentes:**
     *   **Sensores de peso:** En cada bandeja, monitorean el consumo real de los productos.
     *   **Sensores de temperatura y humedad zonificados:** Ajustan el clima interno específico para frutas, verduras, carnes y lácteos, optimizando su conservación.
-    *   **Sensores RFID/QR (opcional):** Para identificar productos envasados y sus fechas de caducidad reales al escanear el código.
+    *   **Sensores RFID/QR:** Para identificar productos envasados y sus fechas de caducidad reales al escanear el código.
 
 #### **Procesamiento y Algoritmos:**
 *   Un módulo de **Machine Learning** (como una Raspberry Pi o Jetson Nano) clasifica los alimentos, estima su estado de frescura basado en apariencia y tiempo, y predice su fecha de vencimiento ideal.
