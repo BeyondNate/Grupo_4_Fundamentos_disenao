@@ -39,129 +39,113 @@ Nos interesa trabajar en los siguientes **Objetivos de Desarrollo Sostenible (OD
 
 ---
 
-## 📌 Resumen Final  
-### ODS 11 Ciudades inteligentes
-### **Objetivo General**
-Garantizar el acceso a una energía **asequible, segura, sostenible y moderna** para todas las personas.
+##  PROYECTO: ECOFRÍO - Refrigerador Inteligente Antidesperdicio
 
-### **¿Por qué es importante?**
-La energía es fundamental para el desarrollo humano y económico: para la salud, la educación, el empleo y la seguridad. Sin embargo, millones de personas aún carecen de acceso a electricidad y dependen de fuentes de energía contaminantes (como leña o queroseno) para cocinar, lo que genera problemas de salud y ambientaless.
+### Descripción General
+**ECOFRIO** es un refrigerador inteligente diseñado para prolongar la vida útil de los alimentos y reducir radicalmente el desperdicio, integrando tecnología IoT, sensores avanzados, visión artificial y diseño sostenible. No solo conserva alimentos, sino que gestiona inteligentemente su ciclo de vida.
+
+###  Objetivo General
+Diseñar y desarrollar un prototipo de refrigerador doméstico que reduzca en un 50% el desperdicio de alimentos en hogares peruanos mediante tecnología de monitoreo inteligente y gestión proactiva.
+
+### 🔍 ¿Cómo Funciona?
+
+#### **Sistema Integrado de Monitoreo:**
+1.  **Visión por Computadora:** Una cámara interior escanea automáticamente cada producto al ser guardado, identificándolo y registrándolo en el inventario digital.
+2.  **Sensores Inteligentes:**
+    *   **Sensores de peso:** En cada bandeja, monitorean el consumo real de los productos.
+    *   **Sensores de temperatura y humedad zonificados:** Ajustan el clima interno específico para frutas, verduras, carnes y lácteos, optimizando su conservación.
+    *   **Sensores RFID/QR (opcional):** Para identificar productos envasados y sus fechas de caducidad reales al escanear el código.
+
+#### **Procesamiento y Algoritmos:**
+*   Un módulo de **Machine Learning** (como una Raspberry Pi o Jetson Nano) clasifica los alimentos, estima su estado de frescura basado en apariencia y tiempo, y predice su fecha de vencimiento ideal.
+*   **Algoritmos de recomendación** sugieren recetas basadas en los alimentos que están por vencer.
+
+#### **Interfaz de Usuario y Alertas:**
+*   **Pantalla táctil integrada:** Muestra el inventario en tiempo real, el estado de cada producto y alertas.
+*   **Aplicación móvil conectada vía WiFi/Bluetooth:** Envía notificaciones push personalizadas:
+    > *"⚠️ Tus plátanos están en su punto perfecto para comer hoy."*
+    > *"🔔 La leche caduca en 2 días. ¿Te gustaría ver recetas para usarla?"*
+    > *"📊 Esta semana has ahorrado S/ 15.00 al reducir tu desperdicio de alimentos."*
+
+
+#### **Diseño Sostenible y Eficiente:**
+*   **Compartimentos modulares con clima independiente:** Zonas con temperatura y humedad personalizadas para maximizar la vida útil de cada tipo de alimento.
+*   **Aislamiento térmico mejorado:** Hecho con materiales reciclados o de origen biológico para reducir el consumo energético.
+*   **Compresor de alta eficiencia:** Optimizado para el clima peruano y el frecuente abrir y cerrar de la puerta típico en hogares.
+
+---
+## 📊 IMPACTO EN EL ODS 12: PRODUCCIÓN Y CONSUMO RESPONSABLES
+
+### 🎯 Meta 12.3: Reducción del Desperdicio de Alimentos
+**"De aquí a 2030, reducir a la mitad el desperdicio de alimentos per cápita mundial"**
+
+| Indicador | Impacto de ECOFRÍO |
+|:---|:---|
+| **Reducción de desperdicio** | Monitoreo inteligente que previene el olvido y descomposición de alimentos |
+| **Optimización del consumo** | Alertas proactivas sobre fechas de vencimiento y estado de frescura |
+| **Gestión eficiente** | Inventario automático que evita compras duplicadas y excesivas |
+
+### ♻️ Meta 12.5: Reducción de Generación de Desechos
+**"Reducir considerablemente la generación de desechos mediante actividades de prevención, reducción, reciclado y reutilización"**
+
+| Indicador | Impacto de ECOFRÍO |
+|:---|:---|
+| **Prevención** | Elimina el desperdicio en origen al conservar mejor los alimentos |
+| **Reducción** | Disminuye la cantidad de residuos orgánicos en hogares |
+| **Economía circular** | Promueve el consumo consciente y la reutilización creativa |
+
+### 📚 Meta 12.8: Información para Estilos de Vida Sostenibles
+**"Asegurar que las personas tengan información y conocimientos sobre desarrollo sostenible"**
+
+| Indicador | Impacto de ECOFRÍO |
+|:---|:---|
+| **Educación alimentaria** | Proporciona datos sobre conservación y aprovechamiento de alimentos |
+| **Concienciación** | Reportes semanales sobre ahorro económico y ambiental |
+| **Toma de decisiones** | Información en tiempo real para compras y consumo responsables |
 
 ---
 
-### **Metas Clave**
+## 🧩 Componentes Clave del Prototipo
 
-El ODS 7 busca:
-
-1.  **Acceso Universal:** Garantizar el acceso universal a servicios energéticos asequibles, confiables y modernos para **2030**.
-2.  **Energía Renovable:** Aumentar sustancialmente el porcentaje de **energía renovable** (solar, eólica, hidroeléctrica, etc.) en el mix energético global.
-3.  **Eficiencia Energética:** Duplicar la tasa mundial de mejora de la **eficiencia energética** (usar menos energía para hacer lo mismo).
-4.  **Cooperación Internacional:** Promover la investigación y la inversión en infraestructura y tecnología de energía limpia.
-5.  **Tecnología y Servicios:** Ampliar la infraestructura y mejorar la tecnología para prestar servicios energéticos modernos y sostenibles para todos en los países en desarrollo.
+| Categoría | Componentes | Función |
+|:---:|:---|:---|
+| **Hardware** | Arduino/ESP32, Raspberry Pi, Cámara OV2640, Sensores DHT22, Load Cells | Control y monitoreo del sistema |
+| **Software** | OpenCV, Base de datos local, App móvil, Sistema de alertas | Procesamiento inteligente y comunicación |
+| **Diseño** | Estructura modular, Aislamiento sostenible, Bandejas configurables | Optimización de espacio y eficiencia |
 
 ---
 
-BAIE 001 - Bomba de Agua Impulsada Eólicamente para Minería en Altura**  
-
-**Objetivo General:**  
-Diseñar y validar un prototipo de bomba de agua accionada por energía eólica para reducir el uso de combustibles fósiles en operaciones mineras de grandes alturas.  
-
-**Metas Clave:**  
-1. Aprovechar vientos de altitud para bombeo sostenible.  
-2. Reducir costos energéticos y emisiones en minería.  
-3. Validar technicalmente el prototipo en condiciones simuladas.  
-
-
-**Aliados Clave:**  
-- Empresas mineras (datos, financiamiento, pruebas).  
-- Departamentos de ingeniería universitaria (recursos técnicos).  
-
-**Impacto:**  
-- **Ambiental:** Energía limpia y reducción de huella de carbono.  
-- **Económico:** Ahorro operativo para la minería.  
-- **Social:** Potencial adaptación para comunidades rurales.  
-
-**Entregables:**  
-- Prototipo funcional.  
-- Reporte técnico y análisis de viabilidad económica.  
----
-
-### **Proyecto: BAIE 001 - Sistema Integrado de Bombeo Eólico con Control Arduino**
-
-**Objetivo:**  
-Automatizar un sistema de bombeo de agua para minería en altura, usando energía eólica, con control inteligente y protecciones mediante Arduino.
+## 🔬 Metodología de Desarrollo
+1.  **Investigación y Empatía:** Estudio de hábitos de consumo en hogares peruanos
+2.  **Diseño Conceptual:** Modelado 3D y prototipado de interfaz
+3.  **Desarrollo Técnico:** Implementación de sensores, visión artificial y app móvil
+4.  **Pruebas y Validación:** Testeo con usuarios reales y medición de impacto
+5.  **Iteración y Documentación:** Mejora continua y memoria técnica
 
 ---
 
-### **Componentes Necesarios**
+## 📈 Métricas de Impacto ODS 12
 
-#### **1. Para la Generación Eólica:**
-- Aerogenerador (puede ser DIY con motor DC como generador o kit comercial pequeño).
-- Torre metálica o estructura firme.
-- **Sensores:**
-  - Anemómetro (medir velocidad del viento).
-  - Veleta (detectar dirección del viento).
-  - Sensor de RPM (encoder óptico en el eje del rotor).
-
-#### **2. Para el Control y Protección:**
-- Arduino Uno/Mega/Nano.
-- Módulo de relés o driver MOSFET (para control de carga).
-- Servomotor (para orientación automática del aerogenerador opcional).
-- Freno mecánico (ej.: disco de freno con solenoide o servo).
-- Batería de 12V/24V (para almacenar energía y estabilizar el sistema).
-
-#### **3. Para el Bombeo:**
-- Bomba de agua DC (12V/24V, según el caudal requerido).
-- Sensor de nivel de agua (flotador o ultrasonido).
-- Módulo PWM (para regular velocidad de la bomba).
-- Tuberías y tanque de almacenamiento.
+| Métrica | Objetivo 2030 | Contribución de ECOFRÍO |
+|:---|:---|:---|
+| Reducción desperdicio alimentos | 50% | 50% en hogares usuarios |
+| Generación de desechos orgánicos | Reducción considerable | Hasta 40% menos residuos |
+| Personas con información sostenible | 100% | Educación continua a usuarios |
 
 ---
 
-### **Funciones de Arduino (Código Integrado)**
-
-El Arduino ejecutará este flujo de forma continua:
-
-1.  **Monitoreo del Viento:**
-    - Lee anemómetro y veleta.
-    - Calcula si el viento es suficiente para generar energía o si es peligroso.
-
-2.  **Protección del Aerogenerador:**
-    - Si el viento > límite máximo (ej.: 60 km/h):
-      - Activa el freno mecánico.
-      - Desconecta la carga para evitar daños.
-    - Si el viento cambia de dirección (y hay servomotor):
-      - Ajusta la orientación del aerogenerador para maximizar eficiencia.
-
-3.  **Control de la Bomba:**
-    - Lee el sensor de nivel de agua (ej.: tanque vacío = bombear).
-    - Si hay suficiente viento y el tanque no está lleno:
-      - Regula la velocidad de la bomba con PWM según la intensidad del viento.
-    - Si el tanque está lleno o no hay viento:
-      - Apaga la bomba.
-
-4.  **Regulación de Carga:**
-    - Dirige la energía generada hacia:
-      - La bomba de agua (prioridad).
-      - La batería de respaldo (si sobra energía).
-      - Resistor de descarga (dump load) si la batería está llena.
-
-5.  **Monitorización en Tiempo Real:**
-    - Muestra en pantalla LCD/PC:
-      - Velocidad del viento.
-      - Estado de la bomba (ON/OFF, velocidad).
-      - Nivel de agua en tanque.
-      - Alertas de seguridad.
+<p align="center">
+  <em>Transformando la forma de conservar nuestros alimentos para un consumo responsable y sostenible</em>
+</p>
 
 
----
 
-### **Entregables del Proyecto**
 
-1.  **Prototipo Físico:** Torre eólica + bomba + circuito con Arduino.
-2.  **Código Arduino:** Programado y comentado.
-3.  **Pruebas de Campo:** Datos de eficiencia (ej.: "Con viento a X km/h, se bombean Y litros/hora").
-4.  **Análisis de Viabilidad:** Costos vs. ahorro energético para minería.
 
----
-<img src="https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/BAIE_001.jpeg" width="1000"/>
+
+
+
+
+
+
+
