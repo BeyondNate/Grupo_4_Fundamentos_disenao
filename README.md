@@ -42,6 +42,7 @@ Como equipo, nos interesa trabajar en los siguientes **Objetivos de Desarrollo S
 
 # PROYECTO: SmartFresh - Módulo Inteligente Antidesperdicio para Refrigeradores
 
+
 ### Descripción General
 **SmartFresh** es un módulo inteligente y portátil que se instala en el interior de refrigeradores convencionales para transformarlos en sistemas inteligentes. Diseñado para prolongar la vida útil de los alimentos y reducir el desperdicio, integra tecnología IoT, sensores avanzados, visión artificial y está fabricado con materiales sostenibles.
 
