@@ -134,14 +134,6 @@ Diseñar y desarrollar un prototipo de refrigerador doméstico que reduzca en un
 
 ---
 
-<p align="center">
-  <em>Transformando la forma de conservar nuestros alimentos para un consumo responsable y sostenible</em>
-</p>
-
-
-
-
-
 
 
 
