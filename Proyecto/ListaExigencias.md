@@ -37,7 +37,7 @@
 
 ## 2. Plan de Trabajo
 
-![Plan de Trabajo](recursos/imagenes/listaecogencias.jpg)
+![Plan de Trabajo](Recursos/imagenes/listaecogencias.jpg)
 
 ---
 
