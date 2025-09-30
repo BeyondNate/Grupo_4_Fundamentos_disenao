@@ -37,7 +37,7 @@
 
 ## 2. Plan de Trabajo
 
-![Plan de Trabajo](Recursos/imagenes/listaecogencias.jpg)
+<img src="hhttps://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/listaecigencias.jpg" width="90"/>
 
 ---
 
