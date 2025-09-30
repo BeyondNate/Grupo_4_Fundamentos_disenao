@@ -20,9 +20,9 @@
 
 | Título | Código | Resumen | Imagen | Enlace |
 |--------|--------|---------|---------|--------|
-| Método de control de conservación de carne fresca mediante congelación parcial, controlador y refrigerador | US12345467B2 | Control de temperatura mediante ciclos de enfriamiento y calentamiento para mantener la carne fresca y fácil de cortar. | `[IMAGEN]` | [Ver patente](https://worldwide.espacenet.com/patent/search?q=pn%3DUS12345467B2) |
-| Método de esterilización y refrigerador | CN119278997A | Ajuste automático de la distancia de iluminación UV según el grado de contaminación microbiana de los alimentos. | `[IMAGEN]` | [Ver patente](https://worldwide.espacenet.com/patent/search/family/094161730/publication/CN119278997A?q=pn%3DCN119278997A) |
-| Refrigerador con detección de deterioro por aroma | US20190311598A1 | Sensor químico que mide sustancias relacionadas con el deterioro de los alimentos dentro del refrigerador. | `[IMAGEN]` | [Ver patente](https://patents.google.com/patent/US20190311598A1/en) |
+| Método de control de conservación de carne fresca mediante congelación parcial, controlador y refrigerador | US12345467B2 | Control de temperatura mediante ciclos de enfriamiento y calentamiento para mantener la carne fresca y fácil de cortar. | ![Imagen1](https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/Imagen2.png) | [Sitio web](https://frigosense.com/)  | [Ver patente](https://worldwide.espacenet.com/patent/search?q=pn%3DUS12345467B2) |
+| Método de esterilización y refrigerador | CN119278997A | Ajuste automático de la distancia de iluminación UV según el grado de contaminación microbiana de los alimentos. | ![Imagen2](https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/Imagen3.png) | [Ver patente](https://worldwide.espacenet.com/patent/search/family/094161730/publication/CN119278997A?q=pn%3DCN119278997A) |
+| Refrigerador con detección de deterioro por aroma | US20190311598A1 | Sensor químico que mide sustancias relacionadas con el deterioro de los alimentos dentro del refrigerador. | ![Imagen3](https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/Imagen4.png) | [Ver patente](https://patents.google.com/patent/US20190311598A1/en) |
 
 ---
 
@@ -30,9 +30,9 @@
 
 | Título | Resumen | Imagen | Enlace |
 |--------|---------|---------|--------|
-| FrigoSense | Dispositivo IoT que monitorea calidad del aire, CO₂, temperatura y humedad. Envía alertas y permite monitoreo remoto. | `[IMAGEN]` | [Sitio web](https://frigosense.com/) |
-| Smarter FridgeCam | Cámara que fotografía el interior del refrigerador y envía imágenes al teléfono. Ayuda a reducir desperdicio y gestionar fechas de caducidad. | `[IMAGEN]` | [Comprar](https://www.amazon.com.be/-/en/FridgeCam-Smarter-Food-Tracking-Refrigerators/dp/B096CDV4LV) o [Sitio web](https://smarter.am/products/smarter-fridgecam) |
-| FoodSpai | Cámara inteligente que reconoce alimentos, gestiona inventario, sugiere recetas y alerta sobre productos próximos a expirar. | `[IMAGEN]` | [Sitio web](https://www.foodspai.com/) |
+| FrigoSense | Dispositivo IoT que monitorea calidad del aire, CO₂, temperatura y humedad. Envía alertas y permite monitoreo remoto. | ![Imagen4](https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/Imagen5.png) | [Sitio web](https://frigosense.com/) |
+| Smarter FridgeCam | Cámara que fotografía el interior del refrigerador y envía imágenes al teléfono. Ayuda a reducir desperdicio y gestionar fechas de caducidad. | `![Imagen5](https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/Imagen6.png) | [Comprar](https://www.amazon.com.be/-/en/FridgeCam-Smarter-Food-Tracking-Refrigerators/dp/B096CDV4LV) o [Sitio web](https://smarter.am/products/smarter-fridgecam) |
+| FoodSpai | Cámara inteligente que reconoce alimentos, gestiona inventario, sugiere recetas y alerta sobre productos próximos a expirar. | ![Imagen6](https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/Imagen7.png) | [Sitio web](https://www.foodspai.com/) |
 
 ---
 
