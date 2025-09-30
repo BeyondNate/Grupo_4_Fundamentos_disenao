@@ -37,7 +37,7 @@
 
 ## 2. Plan de Trabajo
 
-> ⚠️ **Nota:** El documento original incluye una **Figura 1: Plan de Trabajo** en la página 7, pero no proporciona su contenido textual ni estructura detallada. Si deseas incluirla, deberás agregarla como imagen o describirla por separado.
+![Plan de Trabajo](recursos/imagenes/listaecogencias.jpg)
 
 ---
 
