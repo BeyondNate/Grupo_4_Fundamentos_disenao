@@ -37,7 +37,9 @@
 
 ## 2. PLAN DE TRABAJO
 
-![Plan de Trabajo - Grupo 4 (1)_page-0001](https://github.com/user-attachments/assets/a8d024ef-22a9-4ed2-8c76-b743a4b34221)
+![Plan de trabajo](https://github.com/user-attachments/assets/898ee877-a943-46ed-8c91-5020e0204b8f)
+
+---
 
 ## Bibliografía
 
@@ -65,12 +67,12 @@
 
 ## 5. MATRIZ MORFOLOGÍCA 
 
-
+![Fundamentos de diseño-Matriz Morfológica drawio (5)](https://github.com/user-attachments/assets/91eea3bd-bf99-4783-97df-e676dd87cdcf)
 
 ---
 
 ## 6. MATRIZ PUGH 
 
-![Matrices de evaluación (1)_page-0001](https://github.com/user-attachments/assets/3f66862f-bb9f-4fdb-be85-84c6a1aff4e4)
-![Matrices de evaluación (1)_page-0002](https://github.com/user-attachments/assets/72165e13-c656-423c-b95a-5160b494a9b1)
-![Matrices de evaluación (1)_page-0003](https://github.com/user-attachments/assets/cfc99a35-bafb-44db-9d8d-e63c982399b0)
+![Matriz 1](https://github.com/user-attachments/assets/8fb8114c-4693-40ad-930f-5a34fc96093b)
+![Matriz 2](https://github.com/user-attachments/assets/9f39addd-1334-4fd2-b6db-0644cff8ae73)
+![Matriz 3](https://github.com/user-attachments/assets/40c5d547-426e-4b1f-a6f8-4ce2597d95fa)
