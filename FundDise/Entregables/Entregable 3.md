@@ -5,9 +5,12 @@
 
 # BOCETO 2
 
+![Boceto2_page-0001](https://github.com/user-attachments/assets/95f641c7-a9a7-44c6-b192-f3e946b4b987)
+![Boceto2_page-0002](https://github.com/user-attachments/assets/24e98c90-30fc-4853-b742-176a31574296)
 
 # BOCETO 3
 
+![Boceto3_page-0001](https://github.com/user-attachments/assets/eff0420e-72f5-45d3-ad84-8e8a78169eb6)
 
 # PLANOS 2D
 
