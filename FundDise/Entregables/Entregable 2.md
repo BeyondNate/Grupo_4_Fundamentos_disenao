@@ -43,7 +43,7 @@
 - Méndez, E. T. (2023). *Sistema de alerta del estado de maduración de alimentos frescos dentro de un refrigerador utilizando Inteligencia Artificial*. [Enlace](https://ri-ng.uaq.mx/handle/123456789/8927)
 
 
-# Lista de Exigencias, Plan de Trabajo, Caja Negra, Estructura de Funciones, Matriz Morfologíca y Matriz PUGH
+# LISTA DE EXIGENCIAS
 
 
 **Proyecto:** Sensor de Control de Descomposición en Refrigeradoras de Hogares  
@@ -54,9 +54,6 @@
 
 
 ---
-
-
-## 1. LISTA DE EXIGENCIAS
 
 
 | Fecha       | Tipo | Categoría               | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Responsable(s)     |
@@ -86,7 +83,7 @@
 ---
 
 
-## 2. PLAN DE TRABAJO
+# PLAN DE TRABAJO
 
 
 ![Plan de trabajo](https://github.com/user-attachments/assets/898ee877-a943-46ed-8c91-5020e0204b8f)
@@ -107,7 +104,7 @@
 ---
 
 
-## 3. CAJA NEGRA
+# CAJA NEGRA
 
 
 ![Caja Negra (1)](https://github.com/user-attachments/assets/3d36f2c1-df54-47e3-9d11-b1a934db1bc0)
@@ -116,7 +113,7 @@
 ---
 
 
-## 4. ESTRUCTURA DE FUNCIONES, 
+# ESTRUCTURA DE FUNCIONES, 
 
 
 ![Estructura de funciones (1)](https://github.com/user-attachments/assets/e0fee2c7-60cc-4dd0-875a-b1e14f6d47e5)
@@ -125,7 +122,7 @@
 ---
 
 
-## 5. MATRIZ MORFOLOGÍCA 
+# MATRIZ MORFOLOGÍCA 
 
 
 ![Fundamentos de diseño-Matriz Morfológica drawio (5)](https://github.com/user-attachments/assets/91eea3bd-bf99-4783-97df-e676dd87cdcf)
@@ -134,7 +131,7 @@
 ---
 
 
-## 6. MATRIZ PUGH 
+# MATRIZ PUGH 
 
 
 ![Matriz 1](https://github.com/user-attachments/assets/8fb8114c-4693-40ad-930f-5a34fc96093b)
