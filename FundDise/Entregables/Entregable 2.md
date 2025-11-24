@@ -38,6 +38,7 @@
 ## 2. PLAN DE TRABAJO
 
 ![Plan de Trabajo - Grupo 4 (1)_page-0001](https://github.com/user-attachments/assets/a8d024ef-22a9-4ed2-8c76-b743a4b34221)
+
 ---
 
 ## Bibliografía
