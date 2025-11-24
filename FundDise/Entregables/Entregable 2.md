@@ -1,14 +1,18 @@
 # Lista de Exigencias, Plan de Trabajo, Caja Negra, Estructura de Funciones, Matriz Morfologíca y Matriz PUGH
 
+
 **Proyecto:** Sensor de Control de Descomposición en Refrigeradoras de Hogares  
 **Cliente:** Hogares con refrigeradoras  
 **Fecha:** 25/09/2025  
 **Revisión:** 2  
 **Elaborado por:** R.A, M.A, M.B, G.S, B.C  
 
+
 ---
 
+
 ## 1. LISTA DE EXIGENCIAS
+
 
 | Fecha       | Tipo | Categoría               | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Responsable(s)     |
 |-------------|------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
@@ -33,9 +37,12 @@
 | 29/09/2025  | E    | Costos                  | El costo estimado del prototipo del sistema de monitoreo con sensor de CO₂ y cámara se encuentra en un rango de **US$150 a US$230 por unidad** (aproximadamente S/ 530 a S/ 810, según el tipo de cambio y los aranceles de importación). A estos valores se suman costos de integración, pruebas y mano de obra (~US$30–50).                                                                                                                                                                                                                                                                                 | B.C                |
 | 29/09/2025  | E    | Plazos                  | El proyecto empezará el **jueves 25 de septiembre** y espera su finalización el **lunes 1 de diciembre a las 8 a.m.**, con un total aproximado de **130 horas de trabajo**.                                                                                                                                                                                                                                                                                                                                                                                                                                      | M.A                |
 
+
 ---
 
+
 ## 2. PLAN DE TRABAJO
+
 
 ![Plan de trabajo](https://github.com/user-attachments/assets/898ee877-a943-46ed-8c91-5020e0204b8f)
 
@@ -51,27 +58,39 @@
 - Nemade, B., Shah, K., Marakarkandy, B., & Nagra, R. K. (2024). *An efficient IoT-Based Automated Food Waste Management System with Food Spoilage Detection*. ResearchGate. https://www.researchgate.net/publication/378313726  
 - Wallach, D. F. H., & Novikov, A. (1998). *Methods and devices for detecting spoilage in food products* (WIPO Patent No. WO1998020337A1). https://patents.google.com/patent/WO1998
 
+
 ---
+
 
 ## 3. CAJA NEGRA
 
+
 ![Caja Negra (1)](https://github.com/user-attachments/assets/3d36f2c1-df54-47e3-9d11-b1a934db1bc0)
 
+
 ---
+
 
 ## 4. ESTRUCTURA DE FUNCIONES, 
 
+
 ![Estructura de funciones (1)](https://github.com/user-attachments/assets/e0fee2c7-60cc-4dd0-875a-b1e14f6d47e5)
 
+
 ---
+
 
 ## 5. MATRIZ MORFOLOGÍCA 
 
+
 ![Fundamentos de diseño-Matriz Morfológica drawio (5)](https://github.com/user-attachments/assets/91eea3bd-bf99-4783-97df-e676dd87cdcf)
+
 
 ---
 
+
 ## 6. MATRIZ PUGH 
+
 
 ![Matriz 1](https://github.com/user-attachments/assets/8fb8114c-4693-40ad-930f-5a34fc96093b)
 ![Matriz 2](https://github.com/user-attachments/assets/9f39addd-1334-4fd2-b6db-0644cff8ae73)
