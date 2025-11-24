@@ -62,11 +62,8 @@ Diseñar y desarrollar un prototipo de dispositivo modular adaptable que reduzca
 
 | Sensor | Tipo | Para qué Sirve | Beneficio |
 |:---|:---|:---|:---|
-| **Cámara OV5647** | Visión artificial | Identifica alimentos mediante reconocimiento de imagen y detecta cambios de color/textura | Reconocimiento automático sin necesidad de escanear códigos |
-| **Sensor DHT22** | Temperatura y humedad | Monitorea condiciones ambientales en diferentes zonas del refrigerador | Alerta si la temperatura sube, previniendo descomposición |
-| **Sensor RFID-RC522** | Identificación | Lee etiquetas RFID en productos envasados | Registra automáticamente fecha de vencimiento |
-| **Sensor QR/Code** | Escáner | Lee códigos QR de productos comerciales | Identifica productos y sus fechas de caducidad |
-| **Sensor de puerta** | Magnético | Detecta cuando la puerta del refrigerador queda abierta | Ahorra energía y previene aumento de temperatura |
+| **Cámara OV5647** | Visión artificial | Identifica alimentos mediante reconocimiento de imagen y detecta cambios de color/textura | Reconocimiento automático de la fruta deteriorada |
+| **Sensor MQ135** | Sensar | Detectar la concentración de gases de CO2| Reconocer la calidad de la fruta |
 
 #### **Procesamiento y Algoritmos:**
 *   Un módulo de **Machine Learning** (Raspberry Pi/Jetson Nano) clasifica alimentos, estima su estado de frescura basado en apariencia y tiempo, y predice fechas de vencimiento.
