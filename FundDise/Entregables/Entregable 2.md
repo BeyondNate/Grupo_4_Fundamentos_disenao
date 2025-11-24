@@ -1,4 +1,4 @@
-# Lista de Exigencias y Plan de Trabajo
+# Lista de Exigencias, Plan de Trabajo, Caja Negra, 
 
 **Proyecto:** Sensor de Control de Descomposición en Refrigeradoras de Hogares  
 **Cliente:** Hogares con refrigeradoras  
@@ -8,7 +8,7 @@
 
 ---
 
-## 1. Lista de Exigencias
+## 1. LISTA DE EXIGENCIAS
 
 | Fecha       | Tipo | Categoría               | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Responsable(s)     |
 |-------------|------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
@@ -35,7 +35,7 @@
 
 ---
 
-## 2. Plan de Trabajo
+## 2. PLAN DE TRABAJO
 
 ![Plan de Trabajo](https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/listaecigencias.jpg)
 ---
@@ -49,3 +49,22 @@
 - Morris, R. (2006). *Food freshness sensor* (United States Patent No. US20060121165A1). https://patents.google.com/patent/US20060121165A1/en  
 - Nemade, B., Shah, K., Marakarkandy, B., & Nagra, R. K. (2024). *An efficient IoT-Based Automated Food Waste Management System with Food Spoilage Detection*. ResearchGate. https://www.researchgate.net/publication/378313726  
 - Wallach, D. F. H., & Novikov, A. (1998). *Methods and devices for detecting spoilage in food products* (WIPO Patent No. WO1998020337A1). https://patents.google.com/patent/WO1998
+
+---
+
+## 3. CAJA NEGRA
+
+
+
+---
+
+## 4. MATRIZ MORFOLOGÍCA 
+
+
+
+---
+
+## 5. MATRIZ MORFOLOGÍCA 
+
+
+
