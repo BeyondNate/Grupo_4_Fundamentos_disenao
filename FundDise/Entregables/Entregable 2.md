@@ -1,4 +1,4 @@
-# Lista de Exigencias, Plan de Trabajo, Caja Negra, 
+# Lista de Exigencias, Plan de Trabajo, Caja Negra, Estructura de Funciones, Matriz Morfologíca y Matriz PUGH
 
 **Proyecto:** Sensor de Control de Descomposición en Refrigeradoras de Hogares  
 **Cliente:** Hogares con refrigeradoras  
@@ -58,7 +58,7 @@
 
 ---
 
-## 4. MATRIZ MORFOLOGÍCA 
+## 4. ESTRUCTURA DE FUNCIONES, 
 
 
 
@@ -68,3 +68,6 @@
 
 
 
+---
+
+## 6. MATRIZ PUGH 
