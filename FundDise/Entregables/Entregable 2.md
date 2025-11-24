@@ -39,8 +39,6 @@
 
 ![Plan de Trabajo - Grupo 4 (1)_page-0001](https://github.com/user-attachments/assets/a8d024ef-22a9-4ed2-8c76-b743a4b34221)
 
----
-
 ## Bibliografía
 
 - Eickhoff, S. J., & Wood, R. A. (2007). *Calibration device for carbon dioxide sensor* (United States Patent No. US7174766B2). https://patents.google.com/patent/US7174766B2/en  
