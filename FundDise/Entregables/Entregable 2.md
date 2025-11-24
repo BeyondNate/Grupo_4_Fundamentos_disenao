@@ -37,7 +37,7 @@
 
 ## 2. PLAN DE TRABAJO
 
-![Plan de Trabajo](https://github.com/BeyondNate/Grupo_4_Fundamentos_disenao/blob/main/Recursos/imagenes/listaecigencias.jpg)
+![Plan de Trabajo - Grupo 4 (1)_page-0001](https://github.com/user-attachments/assets/a8d024ef-22a9-4ed2-8c76-b743a4b34221)
 ---
 
 ## Bibliografía
@@ -54,13 +54,13 @@
 
 ## 3. CAJA NEGRA
 
-
+![Caja Negra (1)](https://github.com/user-attachments/assets/3d36f2c1-df54-47e3-9d11-b1a934db1bc0)
 
 ---
 
 ## 4. ESTRUCTURA DE FUNCIONES, 
 
-
+![Estructura de funciones (1)](https://github.com/user-attachments/assets/e0fee2c7-60cc-4dd0-875a-b1e14f6d47e5)
 
 ---
 
@@ -71,3 +71,7 @@
 ---
 
 ## 6. MATRIZ PUGH 
+
+![Matrices de evaluación (1)_page-0001](https://github.com/user-attachments/assets/3f66862f-bb9f-4fdb-be85-84c6a1aff4e4)
+![Matrices de evaluación (1)_page-0002](https://github.com/user-attachments/assets/72165e13-c656-423c-b95a-5160b494a9b1)
+![Matrices de evaluación (1)_page-0003](https://github.com/user-attachments/assets/cfc99a35-bafb-44db-9d8d-e63c982399b0)
