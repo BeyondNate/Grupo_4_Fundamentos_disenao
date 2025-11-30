@@ -10,7 +10,7 @@ Somos el **Equipo 04** del curso **Fundamentos de Diseño 2025-2**, conformado p
 
 Nuestro objetivo es aplicar metodologías de diseño centradas en generar soluciones innovadoras que impacten de manera positiva en la sociedad, el ambiente y la tecnología.  
 
-Como equipo, nos interesa trabajar en los siguientes **Objetivos de Desarrollo Sostenible (ODS):**
+Como equipo, nos interesa trabajar en el siguiente **Objetivo de Desarrollo Sostenible (ODS):**
  
 - ODS 12: Producción y Consumo Responsables 
 
@@ -37,10 +37,10 @@ Como equipo, nos interesa trabajar en los siguientes **Objetivos de Desarrollo S
 ---
 
 
-# PROYECTO: ALI-SmartFresh - Módulo Inteligente Antidesperdicio para Refrigeradores
+# PROYECTO: ALI-SmartFresh - Módulo Inteligente que detecta el deterioro de la Beterraga en los Refrigeradores
 
 ## Descripción
-Este proyecto consiste en un módulo inteligente que se implementa en refrigeradoras para detectar el deterioro de las beterragas, contribuyendo a la reducción del desperdicio de alimentos. El sistema combina sensores de gases y visión computacional para monitorear la frescura de las verduras de manera automática.
+Este proyecto consiste en un módulo inteligente que se implementa en refrigeradoras para detectar el deterioro de las beterragas, contribuyendo a la reducción del desperdicio de alimentos. El sistema combina sensores de gases y visión computacional para monitorear la frescura de dicha verdura de manera automática.
 
 ---
 
@@ -53,7 +53,7 @@ Este proyecto consiste en un módulo inteligente que se implementa en refrigerad
 ### 2. Unidad Interna
 - Ubicada en el compartimento de verduras.
 - Incluye un **sensor MQ135** que mide la concentración de CO₂ para detectar signos de deterioro.
-- Cuenta con un **ESP32-CAM** que captura una fotografía de la fruta cuando el sensor detecta que está malograda.
+- Cuenta con un **ESP32-CAM** que captura una fotografía de la verdura cuando cuando el usuario lo desee a través de un comando en el boot de Telegram.
 
 ---
 
