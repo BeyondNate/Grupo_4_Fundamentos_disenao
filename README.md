@@ -77,6 +77,6 @@ Este proyecto está alineado con el **ODS 12: Producción y consumo responsables
 
 ## Cómo Funciona
 1. El sensor MQ135 mide la concentración de CO₂ en el compartimento de verduras.
-2. Cuando detecta que la fruta está deteriorada, el ESP32-CAM toma una fotografía.
-3. Los datos y la imagen se envían a la unidad externa a través del ESP32.
-4. Se puede monitorear el estado de las verduras en tiempo real.
+2. Cuando detecta que la beterraga está deteriorada, el ESP32-CAM toma una fotografía a través del comando de Telegram.
+3. Los datos del CO2 se envían a la la base de datos y posteriormente a la pagina web a través del ESP32.
+4. Se puede monitorear el estado de las beterragas en tiempo real.
