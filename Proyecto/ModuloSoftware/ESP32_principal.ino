@@ -65,7 +65,7 @@ String botLink = "https://t.me/AliG002";
 
 // ======================
 // MySQL API
-const char* mysqlServer = "http://172.20.25.54:5000"; // Tu IP
+const char* mysqlServer = "http://172.20.25.105:5000"; // Tu IP
 #define ALERT_INTERVAL 60000
 unsigned long lastAlertTime = 0;
 unsigned long lastDBUpdate = 0;
