@@ -1,9 +1,0 @@
-User de  MYSQL
--- Crear usuario (opcional)
-CREATE USER 'usuario_remolachas'@'localhost' IDENTIFIED BY '12345678';
-GRANT ALL PRIVILEGES ON calidad_remolachas.* TO 'usuario_remolachas'@'localhost';
-FLUSH PRIVILEGES;
-
-
-
-CREATE DATABASE calidad_remolachas;
