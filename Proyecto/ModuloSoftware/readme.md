@@ -31,6 +31,8 @@ if (text == "/foto") {
 
 ## Backend Flask – Recepción de Fotos
 
+```cpp
+
 @app.route('/upload', methods=['POST'])
 def upload_photo():
     file = request.files['photo']
