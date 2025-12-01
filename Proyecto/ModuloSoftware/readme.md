@@ -2,6 +2,8 @@
 
 ## ESP32 – Sensor MQ135
 
+```cpp
+
 int pinMQ = 34;
 
 void setup() {
@@ -14,12 +16,18 @@ void loop() {
   delay(500);
 }
 
+```
+
 ## ESP32-CAM – Captura y envío de fotografías
+
+```cpp
 
 if (text == "/foto") {
   bot.sendMessage(chat_id, "Tomando foto...");
   takeAndUploadPhoto(chat_id);
 }
+
+```
 
 ## Backend Flask – Recepción de Fotos
 
@@ -29,7 +37,11 @@ def upload_photo():
     file.save("uploads/" + file.filename)
     return "OK"
 
+```
+
 ## Google Apps Script – Subida de Imágenes a Drive
+
+```cpp
 
 function doPost(e) {
   var file = DriveApp.createFile(
@@ -40,7 +52,11 @@ function doPost(e) {
   return ContentService.createTextOutput(file.getId());
 }
 
+```
+
 ## Google Apps Script – Listar Imágenes
+
+```cpp
 
 function getImages() {
   var folder = DriveApp.getFolderById("TU_FOLDER_ID");
@@ -55,17 +71,29 @@ function getImages() {
   return ContentService.createTextOutput(JSON.stringify(data));
 }
 
+```
+
 ## Web – Página Principal
+
+```cpp
 
 <button onclick="takePicture()">Tomar Foto</button>
 <div id="response"></div>
 
+```
+
 ## Web – Galería de Imágenes
+
+```cpp
 
 <div class="gallery"></div>
 <script src="script.js"></script>
 
+```
+
 ## Base de Datos MySQL
+
+```cpp
 
 CREATE DATABASE prototipo;
 USE prototipo;
@@ -75,3 +103,5 @@ CREATE TABLE lecturas (
     valor_sensor FLOAT,
     fecha DATETIME
 );
+
+```
