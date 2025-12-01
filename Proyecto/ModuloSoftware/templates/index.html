@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dashboard - Monitoreo de Remolachas</title>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+   <!-- Barra de navegación -->
+<nav style="
+   position: fixed;
+   top: 20px;
+   left: 20px;
+   background: rgba(255, 255, 255, 0.95);
+   backdrop-filter: blur(10px);
+   padding: 10px;
+   border-radius: 25px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   display: flex;
+   gap: 10px;
+   z-index: 1000;
+">
+   <a href="/" style="
+       padding: 10px 20px;
+       text-decoration: none;
+       color: white;
+       font-weight: 600;
+       background: linear-gradient(135deg, #667eea, #764ba2);
+       border-radius: 20px;
+       transition: all 0.3s;
+       display: flex;
+       align-items: center;
+       gap: 8px;
+   ">
+       <i class="fas fa-seedling"></i> Sensores
+   </a>
+   <a href="/galeria" style="
+       padding: 10px 20px;
+       text-decoration: none;
+       color: #667eea;
+       font-weight: 600;
+       background: rgba(255,255,255,0.5);
+       border-radius: 20px;
+       transition: all 0.3s;
+       display: flex;
+       align-items: center;
+       gap: 8px;
+   " onmouseover="this.style.background='rgba(255,255,255,0.8)'" onmouseout="this.style.background='rgba(255,255,255,0.5)'">
+       <i class="fas fa-camera"></i> Galería
+   </a>
+</nav>
+
+
+   <style>
+       :root {
+           --primary: #667eea;
+           --primary-dark: #5a6fd8;
+           --secondary: #764ba2;
+           --success: #10b981;
+           --warning: #f59e0b;
+           --danger: #ef4444;
+           --dark: #1f2937;
+           --light: #f8fafc;
+           --gray: #6b7280;
+       }
+
+
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+
+
+       body {
+           font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+           min-height: 100vh;
+           color: var(--dark);
+       }
+
+
+       .container {
+           max-width: 1400px;
+           margin: 0 auto;
+           padding: 20px;
+       }
+
+
+       /* Header */
+       .header {
+           background: rgba(255, 255, 255, 0.95);
+           backdrop-filter: blur(10px);
+           border-radius: 20px;
+           padding: 30px;
+           margin-bottom: 30px;
+           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+           border: 1px solid rgba(255, 255, 255, 0.2);
+       }
+
+
+       .header h1 {
+           font-size: 2.5rem;
+           background: linear-gradient(135deg, var(--primary), var(--secondary));
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           margin-bottom: 10px;
+       }
+
+
+       .header p {
+           color: var(--gray);
+           font-size: 1.1rem;
+       }
+
+
+       /* Stats Grid */
+       .stats-grid {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+           gap: 20px;
+           margin-bottom: 30px;
+       }
+
+
+       .stat-card {
+           background: rgba(255, 255, 255, 0.95);
+           backdrop-filter: blur(10px);
+           padding: 25px;
+           border-radius: 15px;
+           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+           border: 1px solid rgba(255, 255, 255, 0.2);
+           transition: transform 0.3s ease, box-shadow 0.3s ease;
+       }
+
+
+       .stat-card:hover {
+           transform: translateY(-5px);
+           box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+       }
+
+
+       .stat-icon {
+           width: 60px;
+           height: 60px;
+           border-radius: 12px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 1.5rem;
+           margin-bottom: 15px;
+       }
+
+
+       .stat-icon.total { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; }
+       .stat-icon.frescas { background: linear-gradient(135deg, var(--success), #059669); color: white; }
+       .stat-icon.leve { background: linear-gradient(135deg, var(--warning), #d97706); color: white; }
+       .stat-icon.moderado { background: linear-gradient(135deg, #f97316, #ea580c); color: white; }
+       .stat-icon.podridas { background: linear-gradient(135deg, var(--danger), #dc2626); color: white; }
+       .stat-icon.ppm { background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; }
+
+
+       .stat-number {
+           font-size: 2.2rem;
+           font-weight: 700;
+           margin: 10px 0;
+       }
+
+
+       .stat-label {
+           color: var(--gray);
+           font-size: 0.9rem;
+           text-transform: uppercase;
+           letter-spacing: 0.5px;
+       }
+
+
+       /* Charts Grid */
+       .charts-grid {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 25px;
+           margin-bottom: 30px;
+       }
+
+
+       @media (max-width: 1024px) {
+           .charts-grid {
+               grid-template-columns: 1fr;
+           }
+       }
+
+
+       .chart-container {
+           background: rgba(255, 255, 255, 0.95);
+           backdrop-filter: blur(10px);
+           padding: 25px;
+           border-radius: 15px;
+           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+           border: 1px solid rgba(255, 255, 255, 0.2);
+       }
+
+
+       .chart-header {
+           display: flex;
+           align-items: center;
+           margin-bottom: 20px;
+       }
+
+
+       .chart-header i {
+           font-size: 1.5rem;
+           margin-right: 12px;
+           background: linear-gradient(135deg, var(--primary), var(--secondary));
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+       }
+
+
+       .chart-header h3 {
+           font-size: 1.3rem;
+           color: var(--dark);
+       }
+
+
+       /* Bottom Grid */
+       .bottom-grid {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 25px;
+       }
+
+
+       @media (max-width: 768px) {
+           .bottom-grid {
+               grid-template-columns: 1fr;
+           }
+       }
+
+
+       /* Alertas */
+       .alertas-container {
+           background: rgba(255, 255, 255, 0.95);
+           backdrop-filter: blur(10px);
+           padding: 25px;
+           border-radius: 15px;
+           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+           border: 1px solid rgba(255, 255, 255, 0.2);
+           max-height: 500px;
+           overflow-y: auto;
+       }
+
+
+       .alerta-item {
+           padding: 15px;
+           margin: 10px 0;
+           border-radius: 10px;
+           border-left: 4px solid;
+           background: var(--light);
+           transition: transform 0.2s ease;
+       }
+
+
+       .alerta-item:hover {
+           transform: translateX(5px);
+       }
+
+
+       .alerta-leve { border-left-color: var(--warning); background: #fffbeb; }
+       .alerta-moderado { border-left-color: #f97316; background: #fff7ed; }
+       .alerta-peligro { border-left-color: var(--danger); background: #fef2f2; }
+
+
+       .alerta-header {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           margin-bottom: 8px;
+       }
+
+
+       .alerta-telefono {
+           font-weight: 600;
+           color: var(--dark);
+       }
+
+
+       .alerta-estado {
+           padding: 4px 12px;
+           border-radius: 20px;
+           font-size: 0.8rem;
+           font-weight: 600;
+           text-transform: uppercase;
+       }
+
+
+       .estado-leve { background: var(--warning); color: white; }
+       .estado-moderado { background: #f97316; color: white; }
+       .estado-peligro { background: var(--danger); color: white; }
+
+
+       /* Tiempo Real */
+       .tiempo-real-container {
+           background: rgba(255, 255, 255, 0.95);
+           backdrop-filter: blur(10px);
+           padding: 25px;
+           border-radius: 15px;
+           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+           border: 1px solid rgba(255, 255, 255, 0.2);
+       }
+
+
+       .usuarios-grid {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+           gap: 15px;
+           max-height: 400px;
+           overflow-y: auto;
+       }
+
+
+       .usuario-card {
+           background: var(--light);
+           padding: 20px;
+           border-radius: 12px;
+           border-left: 4px solid;
+           transition: all 0.3s ease;
+       }
+
+
+       .usuario-card:hover {
+           transform: translateY(-2px);
+           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+       }
+
+
+       .usuario-card.fresca { border-left-color: var(--success); }
+       .usuario-card.leve { border-left-color: var(--warning); }
+       .usuario-card.moderado { border-left-color: #f97316; }
+       .usuario-card.peligro { border-left-color: var(--danger); }
+
+
+       .usuario-header {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           margin-bottom: 10px;
+       }
+
+
+       .usuario-telefono {
+           font-weight: 600;
+           color: var(--dark);
+       }
+
+
+       .usuario-kilos {
+           background: var(--primary);
+           color: white;
+           padding: 4px 10px;
+           border-radius: 15px;
+           font-size: 0.8rem;
+       }
+
+
+       .usuario-datos {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 10px;
+           font-size: 0.9rem;
+       }
+
+
+       .dato-item {
+           display: flex;
+           flex-direction: column;
+       }
+
+
+       .dato-label {
+           color: var(--gray);
+           font-size: 0.8rem;
+           margin-bottom: 2px;
+       }
+
+
+       .dato-valor {
+           font-weight: 600;
+           color: var(--dark);
+       }
+
+
+       /* Loading */
+       .loading {
+           text-align: center;
+           padding: 40px;
+           color: var(--gray);
+       }
+
+
+       .loading i {
+           font-size: 2rem;
+           margin-bottom: 10px;
+           color: var(--primary);
+       }
+
+
+       /* Status Bar */
+       .status-bar {
+           position: fixed;
+           top: 20px;
+           right: 20px;
+           background: rgba(255, 255, 255, 0.95);
+           backdrop-filter: blur(10px);
+           padding: 10px 20px;
+           border-radius: 25px;
+           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+           display: flex;
+           align-items: center;
+           gap: 10px;
+           z-index: 1000;
+       }
+
+
+       .status-dot {
+           width: 10px;
+           height: 10px;
+           border-radius: 50%;
+           background: var(--success);
+           animation: pulse 2s infinite;
+       }
+
+
+       @keyframes pulse {
+           0%, 100% { opacity: 1; }
+           50% { opacity: 0.5; }
+       }
+
+
+       /* Scrollbar */
+       ::-webkit-scrollbar {
+           width: 6px;
+       }
+
+
+       ::-webkit-scrollbar-track {
+           background: #f1f1f1;
+           border-radius: 10px;
+       }
+
+
+       ::-webkit-scrollbar-thumb {
+           background: var(--primary);
+           border-radius: 10px;
+       }
+
+
+       ::-webkit-scrollbar-thumb:hover {
+           background: var(--primary-dark);
+       }
+
+
+       /* Error States */
+       .error-message {
+           background: #fef2f2;
+           border: 1px solid #fecaca;
+           color: #dc2626;
+           padding: 20px;
+           border-radius: 10px;
+           text-align: center;
+           margin: 10px 0;
+       }
+
+
+       .refresh-btn {
+           background: var(--primary);
+           color: white;
+           border: none;
+           padding: 10px 20px;
+           border-radius: 8px;
+           cursor: pointer;
+           font-size: 0.9rem;
+           transition: background 0.3s ease;
+       }
+
+
+       .refresh-btn:hover {
+           background: var(--primary-dark);
+       }
+   </style>
+</head>
+<body>
+   <!-- Status Bar -->
+   <div class="status-bar">
+       <div class="status-dot" id="status-dot"></div>
+       <span id="status-text">Conectando...</span>
+   </div>
+
+
+   <div class="container">
+       <!-- Header -->
+       <div class="header">
+           <h1><i class="fas fa-seedling"></i> Dashboard de Calidad de Remolachas</h1>
+           <p>Monitoreo en tiempo real de la calidad mediante detección de gases de descomposición</p>
+       </div>
+
+
+       <!-- Estadísticas Principales -->
+       <div class="stats-grid" id="estadisticas-principales">
+           <div class="loading">
+               <i class="fas fa-spinner fa-spin"></i>
+               <p>Cargando estadísticas...</p>
+           </div>
+       </div>
+
+
+       <!-- Gráficos Principales -->
+       <div class="charts-grid">
+           <div class="chart-container">
+               <div class="chart-header">
+                   <i class="fas fa-chart-pie"></i>
+                   <h3>Distribución de Estados</h3>
+               </div>
+               <canvas id="graficoEstados"></canvas>
+           </div>
+
+
+           <div class="chart-container">
+               <div class="chart-header">
+                   <i class="fas fa-chart-line"></i>
+                   <h3>Evolución Temporal (24h)</h3>
+               </div>
+               <canvas id="graficoEvolucion"></canvas>
+           </div>
+       </div>
+
+
+       <!-- Grid Inferior -->
+       <div class="bottom-grid">
+           <div class="chart-container">
+               <div class="chart-header">
+                   <i class="fas fa-weight-scale"></i>
+                   <h3>PPM por Rango de Kilos</h3>
+               </div>
+               <canvas id="graficoKilos"></canvas>
+           </div>
+
+
+           <div class="alertas-container">
+               <div class="chart-header">
+                   <i class="fas fa-bell"></i>
+                   <h3>Alertas Recientes</h3>
+                   <button class="refresh-btn" onclick="cargarDatos()" style="margin-left: auto;">
+                       <i class="fas fa-sync-alt"></i> Actualizar
+                   </button>
+               </div>
+               <div id="lista-alertas">
+                   <div class="loading">
+                       <i class="fas fa-spinner fa-spin"></i>
+                       <p>Cargando alertas...</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+
+       <!-- Monitoreo en Tiempo Real -->
+       <div class="tiempo-real-container">
+           <div class="chart-header">
+               <i class="fas fa-clock"></i>
+               <h3>Monitoreo en Tiempo Real</h3>
+               <button class="refresh-btn" onclick="cargarDatosTiempoReal()" style="margin-left: auto;">
+                   <i class="fas fa-sync-alt"></i> Actualizar
+               </button>
+           </div>
+           <div id="datos-tiempo-real">
+               <div class="loading">
+                   <i class="fas fa-spinner fa-spin"></i>
+                   <p>Cargando datos en tiempo real...</p>
+               </div>
+           </div>
+       </div>
+   </div>
+
+
+   <script>
+       let charts = {};
+       let lastUpdate = new Date();
+       let connectionError = false;
+
+
+       // Inicializar la aplicación
+       async function init() {
+           await cargarDatos();
+           setInterval(cargarDatos, 10000); // Actualizar cada 10 segundos
+           setInterval(actualizarStatus, 1000);
+       }
+
+
+       // Cargar todos los datos
+       async function cargarDatos() {
+           try {
+               await Promise.all([
+                   cargarEstadisticas(),
+                   cargarDatosTiempoReal()
+               ]);
+               lastUpdate = new Date();
+               connectionError = false;
+               document.getElementById('status-dot').style.background = 'var(--success)';
+           } catch (error) {
+               console.error('Error cargando datos:', error);
+               connectionError = true;
+               document.getElementById('status-dot').style.background = 'var(--danger)';
+               mostrarError('Error de conexión con el servidor');
+           }
+       }
+
+
+       // Cargar estadísticas
+       async function cargarEstadisticas() {
+           try {
+               const response = await fetch('/estadisticas');
+               if (!response.ok) throw new Error(`Error ${response.status}: ${response.statusText}`);
+
+
+               const data = await response.json();
+
+
+               if (data.error) {
+                   throw new Error(data.error);
+               }
+
+
+               actualizarEstadisticasPrincipales(data.resumen);
+               actualizarGraficoEstados(data.resumen);
+               actualizarGraficoEvolucion(data.evolucion);
+               actualizarGraficoKilos(data.distribucion_kilos);
+               actualizarAlertas(data.alertas_recientes);
+
+
+           } catch (error) {
+               console.error('Error cargando estadísticas:', error);
+               mostrarError(`Error cargando estadísticas: ${error.message}`);
+               throw error;
+           }
+       }
+
+
+       // Actualizar estadísticas principales
+       function actualizarEstadisticasPrincipales(stats) {
+           const container = document.getElementById('estadisticas-principales');
+           const total = stats.total_usuarios || 0;
+
+
+           if (total === 0) {
+               container.innerHTML = `
+                   <div class="stat-card" style="grid-column: 1 / -1; text-align: center;">
+                       <div class="stat-icon total">
+                           <i class="fas fa-database"></i>
+                       </div>
+                       <div class="stat-number">0</div>
+                       <div class="stat-label">No hay datos disponibles</div>
+                       <p style="color: var(--gray); margin-top: 10px;">Esperando datos del ESP32...</p>
+                   </div>
+               `;
+               return;
+           }
+
+
+           container.innerHTML = `
+               <div class="stat-card">
+                   <div class="stat-icon total">
+                       <i class="fas fa-users"></i>
+                   </div>
+                   <div class="stat-number">${total}</div>
+                   <div class="stat-label">Total Usuarios</div>
+               </div>
+               <div class="stat-card">
+                   <div class="stat-icon frescas">
+                       <i class="fas fa-check-circle"></i>
+                   </div>
+                   <div class="stat-number" style="color: var(--success);">${stats.frescas || 0}</div>
+                   <div class="stat-label">Remolachas Frescas</div>
+               </div>
+               <div class="stat-card">
+                   <div class="stat-icon leve">
+                       <i class="fas fa-exclamation-triangle"></i>
+                   </div>
+                   <div class="stat-number" style="color: var(--warning);">${stats.inicio_descomposicion || 0}</div>
+                   <div class="stat-label">Inicio Descomposición</div>
+               </div>
+               <div class="stat-card">
+                   <div class="stat-icon moderado">
+                       <i class="fas fa-radiation"></i>
+                   </div>
+                   <div class="stat-number" style="color: #f97316;">${stats.descomposicion_avanzada || 0}</div>
+                   <div class="stat-label">Descomposición Avanzada</div>
+               </div>
+               <div class="stat-card">
+                   <div class="stat-icon podridas">
+                       <i class="fas fa-skull-crossbones"></i>
+                   </div>
+                   <div class="stat-number" style="color: var(--danger);">${stats.podridas || 0}</div>
+                   <div class="stat-label">Remolachas Podridas</div>
+               </div>
+               <div class="stat-card">
+                   <div class="stat-icon ppm">
+                       <i class="fas fa-chart-bar"></i>
+                   </div>
+                   <div class="stat-number" style="color: #8b5cf6;">${Math.round(stats.ppm_promedio || 0)}</div>
+                   <div class="stat-label">PPM Promedio</div>
+               </div>
+           `;
+       }
+
+
+       // Gráfico de distribución de estados
+       function actualizarGraficoEstados(stats) {
+           const ctx = document.getElementById('graficoEstados').getContext('2d');
+
+
+           if (charts.estados) charts.estados.destroy();
+
+
+           const data = [
+               stats.frescas || 0,
+               stats.inicio_descomposicion || 0,
+               stats.descomposicion_avanzada || 0,
+               stats.podridas || 0
+           ];
+
+
+           if (data.reduce((a, b) => a + b, 0) === 0) {
+               ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+               ctx.fillStyle = '#6b7280';
+               ctx.textAlign = 'center';
+               ctx.fillText('No hay datos disponibles', ctx.canvas.width / 2, ctx.canvas.height / 2);
+               return;
+           }
+
+
+           charts.estados = new Chart(ctx, {
+               type: 'doughnut',
+               data: {
+                   labels: ['Frescas', 'Inicio Descomposición', 'Descomposición Avanzada', 'Podridas'],
+                   datasets: [{
+                       data: data,
+                       backgroundColor: ['#10b981', '#f59e0b', '#f97316', '#ef4444'],
+                       borderWidth: 2,
+                       borderColor: '#ffffff'
+                   }]
+               },
+               options: {
+                   responsive: true,
+                   cutout: '65%',
+                   plugins: {
+                       legend: {
+                           position: 'bottom',
+                           labels: {
+                               padding: 20,
+                               usePointStyle: true
+                           }
+                       }
+                   },
+                   animation: {
+                       animateScale: true,
+                       animateRotate: true
+                   }
+               }
+           });
+       }
+
+
+       // Gráfico de evolución temporal
+       function actualizarGraficoEvolucion(evolucion) {
+           const ctx = document.getElementById('graficoEvolucion').getContext('2d');
+
+
+           if (charts.evolucion) charts.evolucion.destroy();
+
+
+           if (!evolucion || evolucion.length === 0) {
+               ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+               ctx.fillStyle = '#6b7280';
+               ctx.textAlign = 'center';
+               ctx.fillText('No hay datos históricos', ctx.canvas.width / 2, ctx.canvas.height / 2);
+               return;
+           }
+
+
+           charts.evolucion = new Chart(ctx, {
+               type: 'line',
+               data: {
+                   labels: evolucion.map(e => new Date(e.hora)),
+                   datasets: [{
+                       label: 'PPM Promedio',
+                       data: evolucion.map(e => e.ppm_promedio),
+                       borderColor: '#667eea',
+                       backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                       fill: true,
+                       tension: 0.4,
+                       pointBackgroundColor: '#667eea',
+                       pointBorderColor: '#ffffff',
+                       pointBorderWidth: 2,
+                       pointRadius: 4
+                   }]
+               },
+               options: {
+                   responsive: true,
+                   scales: {
+                       x: {
+                           type: 'time',
+                           time: {
+                               unit: 'hour',
+                               displayFormats: {
+                                   hour: 'HH:mm'
+                               }
+                           },
+                           grid: {
+                               color: 'rgba(0,0,0,0.1)'
+                           }
+                       },
+                       y: {
+                           beginAtZero: true,
+                           grid: {
+                               color: 'rgba(0,0,0,0.1)'
+                           }
+                       }
+                   },
+                   plugins: {
+                       tooltip: {
+                           mode: 'index',
+                           intersect: false
+                       }
+                   }
+               }
+           });
+       }
+
+
+       // Gráfico por rangos de kilos
+       function actualizarGraficoKilos(distribucion) {
+           const ctx = document.getElementById('graficoKilos').getContext('2d');
+
+
+           if (charts.kilos) charts.kilos.destroy();
+
+
+           if (!distribucion || distribucion.length === 0) {
+               ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+               ctx.fillStyle = '#6b7280';
+               ctx.textAlign = 'center';
+               ctx.fillText('No hay datos por kilos', ctx.canvas.width / 2, ctx.canvas.height / 2);
+               return;
+           }
+
+
+           charts.kilos = new Chart(ctx, {
+               type: 'bar',
+               data: {
+                   labels: distribucion.map(d => d.rango_kilos),
+                   datasets: [{
+                       label: 'PPM Promedio',
+                       data: distribucion.map(d => d.ppm_promedio),
+                       backgroundColor: '#764ba2',
+                       borderColor: '#764ba2',
+                       borderWidth: 2,
+                       borderRadius: 8
+                   }]
+               },
+               options: {
+                   responsive: true,
+                   scales: {
+                       y: {
+                           beginAtZero: true,
+                           grid: {
+                               color: 'rgba(0,0,0,0.1)'
+                           }
+                       },
+                       x: {
+                           grid: {
+                               display: false
+                           }
+                       }
+                   },
+                   plugins: {
+                       legend: {
+                           display: false
+                       }
+                   }
+               }
+           });
+       }
+
+
+       // Actualizar alertas recientes
+       function actualizarAlertas(alertas) {
+           const container = document.getElementById('lista-alertas');
+
+
+           if (!alertas || alertas.length === 0) {
+               container.innerHTML = '<div class="alerta-item"><i class="fas fa-check-circle" style="color: var(--success);"></i> No hay alertas recientes</div>';
+               return;
+           }
+
+
+           container.innerHTML = alertas.map(alerta => `
+               <div class="alerta-item alerta-${getClaseAlerta(alerta.estado)}">
+                   <div class="alerta-header">
+                       <span class="alerta-telefono">
+                           <i class="fas fa-phone"></i> ${alerta.telefono}
+                       </span>
+                       <span class="alerta-estado estado-${getClaseAlerta(alerta.estado)}">
+                           ${alerta.estado}
+                       </span>
+                   </div>
+                   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px;">
+                       <div>
+                           <small><strong>PPM:</strong> ${Math.round(alerta.ppm)}</small>
+                       </div>
+                       <div>
+                           <small><strong>Hora:</strong> ${new Date(alerta.timestamp).toLocaleTimeString()}</small>
+                       </div>
+                   </div>
+               </div>
+           `).join('');
+       }
+
+
+       // Cargar datos en tiempo real
+       async function cargarDatosTiempoReal() {
+           try {
+               const response = await fetch('/datos');
+               if (!response.ok) throw new Error(`Error ${response.status}: ${response.statusText}`);
+
+
+               const datos = await response.json();
+
+
+               if (datos.error) {
+                   throw new Error(datos.error);
+               }
+
+
+               actualizarDatosTiempoReal(datos);
+
+
+           } catch (error) {
+               console.error('Error cargando datos tiempo real:', error);
+               mostrarError(`Error cargando datos en tiempo real: ${error.message}`);
+               throw error;
+           }
+       }
+
+
+       function actualizarDatosTiempoReal(datos) {
+           const container = document.getElementById('datos-tiempo-real');
+
+
+           if (!datos || datos.length === 0) {
+               container.innerHTML = `
+                   <div class="error-message">
+                       <i class="fas fa-database"></i>
+                       <p>No hay datos disponibles en tiempo real</p>
+                       <p style="font-size: 0.9rem; margin-top: 10px;">Esperando datos del ESP32...</p>
+                   </div>
+               `;
+               return;
+           }
+
+
+           container.innerHTML = `
+               <div class="usuarios-grid">
+                   ${datos.map(item => `
+                       <div class="usuario-card ${getClaseEstado(item.estado)}">
+                           <div class="usuario-header">
+                               <span class="usuario-telefono">
+                                   <i class="fas fa-user"></i> ${item.telefono}
+                               </span>
+                               <span class="usuario-kilos">
+                                   ${item.kilos} kg
+                               </span>
+                           </div>
+                           <div class="usuario-datos">
+                               <div class="dato-item">
+                                   <span class="dato-label">Voltaje</span>
+                                   <span class="dato-valor">${item.voltage.toFixed(3)}V</span>
+                               </div>
+                               <div class="dato-item">
+                                   <span class="dato-label">PPM</span>
+                                   <span class="dato-valor">${Math.round(item.ppm)}</span>
+                               </div>
+                               <div class="dato-item">
+                                   <span class="dato-label">Estado</span>
+                                   <span class="dato-valor" style="color: ${getColorEstado(item.estado)};">
+                                       ${item.estado}
+                                   </span>
+                               </div>
+                               <div class="dato-item">
+                                   <span class="dato-label">Última lectura</span>
+                                   <span class="dato-valor">${new Date(item.timestamp).toLocaleTimeString()}</span>
+                               </div>
+                           </div>
+                       </div>
+                   `).join('')}
+               </div>
+           `;
+       }
+
+
+       // Funciones auxiliares
+       function getClaseAlerta(estado) {
+           const map = {
+               'leve': 'leve',
+               'moderado': 'moderado',
+               'mucho gas': 'peligro'
+           };
+           return map[estado] || 'leve';
+       }
+
+
+       function getClaseEstado(estado) {
+           const map = {
+               'sin gas': 'fresca',
+               'leve': 'leve',
+               'moderado': 'moderado',
+               'mucho gas': 'peligro'
+           };
+           return map[estado] || 'fresca';
+       }
+
+
+       function getColorEstado(estado) {
+           const colors = {
+               'sin gas': 'var(--success)',
+               'leve': 'var(--warning)',
+               'moderado': '#f97316',
+               'mucho gas': 'var(--danger)'
+           };
+           return colors[estado] || 'var(--gray)';
+       }
+
+
+       function actualizarStatus() {
+           const now = new Date();
+           const diff = Math.floor((now - lastUpdate) / 1000);
+           const statusText = document.getElementById('status-text');
+           const statusDot = document.getElementById('status-dot');
+
+
+           if (connectionError) {
+               statusText.textContent = 'Error de conexión';
+               statusText.style.color = 'var(--danger)';
+               statusDot.style.background = 'var(--danger)';
+           } else if (diff < 10) {
+               statusText.textContent = 'Actualizado ahora';
+               statusText.style.color = 'var(--success)';
+               statusDot.style.background = 'var(--success)';
+           } else if (diff < 30) {
+               statusText.textContent = `Actualizado hace ${diff}s`;
+               statusText.style.color = 'var(--warning)';
+               statusDot.style.background = 'var(--warning)';
+           } else {
+               statusText.textContent = `Actualizado hace ${diff}s`;
+               statusText.style.color = 'var(--danger)';
+               statusDot.style.background = 'var(--danger)';
+           }
+       }
+
+
+       function mostrarError(mensaje) {
+           // Podrías implementar notificaciones toast aquí
+           console.error('Error:', mensaje);
+
+
+           // Mostrar error en algún contenedor si es necesario
+           const errorContainer = document.getElementById('lista-alertas');
+           if (errorContainer) {
+               errorContainer.innerHTML = `
+                   <div class="error-message">
+                       <i class="fas fa-exclamation-triangle"></i>
+                       <p>${mensaje}</p>
+                       <button class="refresh-btn" onclick="cargarDatos()" style="margin-top: 10px;">
+                           <i class="fas fa-sync-alt"></i> Reintentar
+                       </button>
+                   </div>
+               `;
+           }
+       }
+
+
+       // Inicializar la aplicación cuando se carga la página
+       document.addEventListener('DOMContentLoaded', init);
+   </script>
+</body>
+</html>
